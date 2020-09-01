@@ -1,7 +1,7 @@
 액셀<-read.csv("res1.csv",header=T);
 x=액셀$저항;
 n=length(x);
-hx=hist(x,breaks=seq(min(x),max(x),by=(max(x)-min(x))/20),right=F);
+hx=hist(x,breaks=seq(min(x),max(x),by=(max(x)-min(x))/15),right=F);
 
 xcf<-cumsum(hx$counts)
 xrf<-hx$counts/n#상대도수
